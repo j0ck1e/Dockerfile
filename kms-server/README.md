@@ -1,5 +1,9 @@
 # kms server docker image
 forked from [luodaoyi/kms-server](https://github.com/luodaoyi/kms-server)
+```shell
+docker pull j0ck1e/kms-server
+```
+
 ## 直接可用的地址：
 
 ```
