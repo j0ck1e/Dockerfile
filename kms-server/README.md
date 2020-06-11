@@ -8,7 +8,7 @@ docker run -d -p 1688:1688 --restart unless-stopped j0ck1e/kms-server
 ## 直接可用的地址：
 
 ```
-kms.j0ck1e.com
+kms.j0ck1e.com:31731
 ```
 
 ## kms version:
@@ -28,7 +28,7 @@ vlmcsd-1108-2017-01-19-Hotbird64
 你只需要使用管理员权限运行cmd执行一句命令就足够：
 
 ```
-slmgr /skms kms.j0ck1e.com
+slmgr /skms kms.j0ck1e.com:31731
 ```
 
 
