@@ -1,4 +1,5 @@
 # kms server docker image
+
 forked from [luodaoyi/kms-server](https://github.com/luodaoyi/kms-server)
 ```shell
 docker pull j0ck1e/kms-server
@@ -8,11 +9,13 @@ docker run -d -p 1688:1688 --restart unless-stopped j0ck1e/kms-server
 ## 直接可用的地址：
 
 ```
-kms.j0ck1e.com:31731
+kms.luody.info
 ```
 
 ## kms version:
+
 ```
+vlmcsd-1113-2020-03-28-Hotbird64
 vlmcsd-1112-2018-10-20-Hotbird64
 vlmcsd-1111-2017-06-17-Hotbird64
 vlmcsd-1108-2017-01-19-Hotbird64
@@ -28,7 +31,7 @@ vlmcsd-1108-2017-01-19-Hotbird64
 你只需要使用管理员权限运行cmd执行一句命令就足够：
 
 ```
-slmgr /skms kms.j0ck1e.com:31731
+slmgr /skms kms.luody.info
 ```
 
 
@@ -90,14 +93,14 @@ cd C:\Program Files (x86)\Microsoft Office\Office16
 然后执行注册kms服务器地址：
 
 ```
-cscript ospp.vbs /sethst:kms.j0ck1e.com
+cscript ospp.vbs /sethst:kms.luody.info
 ```
 /sethst参数就是指定kms服务器地址。
 
 一般ospp.vbs可以拖进去cmd窗口，所以也可以这么弄：
 
 ```
-cscript "C:\Program Files (x86)\Microsoft Office\Office16\OSPP.VBS" /sethst:kms.j0ck1e.com
+cscript "C:\Program Files (x86)\Microsoft Office\Office16\OSPP.VBS" /sethst:kms.luody.info
 ```
 
 一般来说，“一句命令已经完成了”，但一般office不会马上连接kms服务器进行激活，所以我们额外补充一条手动激活命令：
@@ -105,7 +108,7 @@ cscript "C:\Program Files (x86)\Microsoft Office\Office16\OSPP.VBS" /sethst:kms.
 ```
 cscript ospp.vbs /act
 ```
-
+ 
 
 如果提示看到successful的字样，那么就是激活成功了，重新打开office就好。
 
@@ -119,27 +122,62 @@ cscript ospp.vbs /act
 
 # Windows GVLK密钥对照表（KMS激活专用）
 
- >以下key来源于微软官网：[https://technet.microsoft.com/en-us/library/jj612867.aspx](https://technet.microsoft.com/en-us/library/jj612867.aspx)
+ >以下key来源于微软官网：[https://technet.microsoft.com/en-us/library/jj612867.aspx](https://technet.microsoft.com/en-us/library/jj612867.aspx) 
+ >[https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys](https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys)
+
+ ## Windows 10/11
+操作系统       | KMS激活序列号
+------------------------------------|------------------------------
+Windows 10/11 Professional          |W269N-WFGWX-YVC9B-4J6C9-T83GX
+Windows 10/11 Professional N        |MH37W-N47XK-V7XM9-C7227-GCQG9
+Windows 10/11 Pro for Workstations  |NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J
+Windows 10/11 Pro for Workstations N|9FNHH-K3HBT-3W4TD-6383H-6XYWF
+Windows 10/11 Pro Education         |6TP4R-GNPTD-KYYHQ-7B7DP-J447Y
+Windows 10/11 Pro EducationN        |YVWGF-BXNMC-HTQYQ-CPQ99-66QFC
+Windows 10/11 Education             |NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
+Windows 10/11 Education N           |2WH4N-8QGBV-H22JP-CT43Q-MDWWJ
+Windows 10/11 Enterprise            |NPPR9-FWDCX-D2C8J-H872K-2YT43
+Windows 10/11 Enterprise N          |DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
+Windows 10/11 Enterprise G          |YYVX9-NTFWV-6MDM3-9PT4T-4M68B
+Windows 10/11 Enterprise G N        |44RPN-FTY23-9VTTB-MP9BX-T84FV
+
+## Windows 10 LTSC 2021/2019
+操作系统       | KMS激活序列号
+--------------------------------------|------------------------------
+Windows 10 Enterprise LTSC 2021/2019  |M7XTQ-FN8P6-TTKYV-9D4CC-J462D
+Windows 10 Enterprise N LTSC 2021/2019|92NFX-8DJQP-P6BBQ-THF9C-7CG2H
+
+## Windows 10 LTSB 2016
+操作系统       | KMS激活序列号
+---------------------------------|------------------------------
+Windows 10 Enterprise LTSB 2016  |WX4NM-KYWYW-QJJR4-XV3QB-6VM33
+Windows 10 Enterprise N LTSB 2016|DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ
+
+## Windows 10 LTSB 2015
+操作系统       | KMS激活序列号
+---------------------------------|------------------------------
+Windows 10 Enterprise LTSB 2015  |WNMTR-4C88C-JK8YV-HQ7T2-76DF9
+Windows 10 Enterprise N LTSB 2015|2F77B-TNFGY-69QQF-B8YKP-D69TJ
+
+## Windows Server 2022
+操作系统       | KMS激活序列号
+-------------------------------|------------------------------
+Windows Server 2022 Datacenter |WX4NM-KYWYW-QJJR4-XV3QB-6VM33
+Windows Server 2022 Standard   |VDYBN-27WPP-V4HQT-9VMD4-VMK7H
+
+## Windows Server 2019
+操作系统       | KMS激活序列号
+-------------------------------|------------------------------
+Windows Server 2019 Datacenter |WMDGN-G9PQG-XVVXX-R3X43-63DFG
+Windows Server 2019 Standard   |N69G4-B89J2-4G8F4-WWYCC-J464C
+Windows Server 2019 Essentials |WVDHN-86M7X-466P6-VHXV7-YY726
+ 
 ## Windows Server 2016
 操作系统       | KMS激活序列号
 -------------------------------|------------------------------
 Windows Server 2016 Datacenter |CB7KF-BWN84-R7R2Y-793K2-8XDDG
 Windows Server 2016 Standard   |WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY
 Windows Server 2016 Essentials |JCKRF-N37P4-C2D82-9YXRT-4M63B
-
-## Windows 10
-操作系统       | KMS激活序列号
--------------------------------|------------------------------
-Windows 10 Professional        |W269N-WFGWX-YVC9B-4J6C9-T83GX
-Windows 10 Professional N      |MH37W-N47XK-V7XM9-C7227-GCQG9
-Windows 10 Enterprise          |NPPR9-FWDCX-D2C8J-H872K-2YT43
-Windows 10 Enterprise N        |DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
-Windows 10 Education           |NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
-Windows 10 Education N         |2WH4N-8QGBV-H22JP-CT43Q-MDWWJ
-Windows 10 Enterprise 2015 LTSB |WNMTR-4C88C-JK8YV-HQ7T2-76DF9
-Windows 10 Enterprise 2015 LTSB N |2F77B-TNFGY-69QQF-B8YKP-D69TJ
-Windows 10 Enterprise 2016 LTSB |DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ
-Windows 10 Enterprise 2016 LTSB N |QFFDN-GRT3P-VKWWX-X7T3R-8B639
 
 ## Windows Server 2012 R2 和 Windows 8.1
 操作系统       | KMS激活序列号
@@ -200,6 +238,7 @@ Windows Server 2008 HPC |RCTX3-KWVHP-BR6TB-RB6DM-6X7HP
 Windows Server 2008 Datacenter |7M67G-PC374-GR742-YH8V4-TCBY3
 Windows Server 2008 Datacenter without Hyper-V |22XQ2-VRXRG-P8D42-K34TD-G3QQC
 Windows Server 2008 for Itanium-Based Systems |4DWFP-JF3DJ-B7DTH-78FJB-PDRHK
+
 
 
 TODO:office
