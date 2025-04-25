@@ -122,8 +122,7 @@ cscript ospp.vbs /act
 
 # Windows GVLK密钥对照表（KMS激活专用）
 
- >以下key来源于微软官网：[https://technet.microsoft.com/en-us/library/jj612867.aspx](https://technet.microsoft.com/en-us/library/jj612867.aspx) 
- >[https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys](https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys)
+ >以下key来源于微软官网：[https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys](https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys)
 
  ## Windows 10/11
 操作系统       | KMS激活序列号
